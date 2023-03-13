@@ -228,6 +228,9 @@ if(INSTALL_PROJECT)
   )
 endif()
 
+add_executable(miniz_gzip ${CMAKE_CURRENT_SOURCE_DIR}/miniz_gzip.c)
+target_link_libraries(miniz_gzip miniz)
+
 if(BUILD_EXAMPLES)
   set(EXAMPLE1_SRC_LIST "${CMAKE_CURRENT_SOURCE_DIR}/examples/example1.c")
   set(EXAMPLE2_SRC_LIST "${CMAKE_CURRENT_SOURCE_DIR}/examples/example2.c")

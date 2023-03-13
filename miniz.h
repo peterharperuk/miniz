@@ -308,7 +308,7 @@ enum
 };
 
 /* Window bits */
-#define MZ_DEFAULT_WINDOW_BITS 15
+#define MZ_DEFAULT_WINDOW_BITS -15 // no zlib header
 
 struct mz_internal_state;
 
